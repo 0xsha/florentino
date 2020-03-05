@@ -149,6 +149,13 @@ Florentino : `"HaHa, A wonderful day for a duel among gentlemen."`
 - Do the extra work and share your findings with community &hearts;
 - [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W112I38)
 
+# Learn More
+
+[Malware fight back the tale of agent tesla](https://0xsha.io/posts/malware-fight-back-the-tale-of-agent-tesla)
+
+[Awesome Malware Analysis](https://github.com/rshipp/awesome-malware-analysis)
+
+[Awsome Reversing](https://github.com/tylerha97/awesome-reversing)
 # License
 
 The project is licensed under the `wtfpl` license.
