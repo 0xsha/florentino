@@ -82,7 +82,7 @@ Flarentino: `Fairest ladies, my lips are like whatever I finish this later ...`
 
 Flarentino : `"You have bad form my friend."`
 
-check out documentation at [./docs/README.md](/docs/README.html)
+check out documentation at [/docs/README.md](./docs/README.md)
 
 # Action time: Florentino VS Ryuk Ransomware
 
