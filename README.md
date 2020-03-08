@@ -76,7 +76,7 @@ Flarentino: `Fairest ladies, my lips are like whatever I finish this later ...`
 
 # Version
 
-1.0.0-alpha
+1.0.1-alpha
 
 # Installation and Usage 
 

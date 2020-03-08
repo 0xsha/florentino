@@ -1,6 +1,6 @@
 # Usage
 Florentino is straightforward to use; all you have to do is install dependencies
-and setup .EVN file
+and setup .EVN file (there is an example env)
 
 
 - Download [D.I.E](https://github.com/horsicq/Detect-It-Easy) 
