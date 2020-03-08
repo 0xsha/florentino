@@ -68,7 +68,7 @@ func main() {
 	if (fl.IsPacked(entropy)) && (fl.IsPEX86(*fileArg)){
 		fl.UnpackPE(*fileArg)
 	}
-	
+
 	// strings part
 	fmt.Println(color.GreenString("[+] String extraction ..."))
 	fmt.Println("Flarentino : " + color.CyanString(fl.FlorentinoQuotes() ))

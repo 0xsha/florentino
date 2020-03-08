@@ -65,7 +65,11 @@ Florentino can work various sources to analyze the file.
 - Strings and IOC scan: Florentino takes it; further it will extract, scan and possibly deobfuscate strings from binary files
 - Binary scan:  Florentino can work with PE x86/x64, Macho x86/x64, ELF x86/x64 files it will obtain imported symbol and libraries
 
-3- Report
+3- Packer detection and unpacking 
+- Currently only support PE x86 Files 
+- unpack engine : [unpac.me](unpac.me)
+
+4- Report
 - All reports are stored as a text file in /data directory
 
 
