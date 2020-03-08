@@ -9,8 +9,8 @@ package main
 
 import (
 	"encoding/hex"
-	fl "florentino/internal"
 	"fmt"
+	fl "github.com/0xsha/florentino/internal"
 	"github.com/akamensky/argparse"
 	"github.com/fatih/color"
 	"github.com/joho/godotenv"
@@ -61,6 +61,15 @@ func main() {
 	fmt.Println(detectedFile.DetectedType)
 	fl.FileAnalysis(detectedFile,*fileArg,sha1Encoded)
 	fmt.Println("Flarentino : " + color.CyanString(fl.FlorentinoQuotes() ))
+
+
+	// x86 packer detection and unpacking
+	entropy := detectedFile.Entropy
+	if (fl.IsPacked(entropy)) && (fl.IsPEX86(*fileArg)){
+		fl.UnpackPE(*fileArg)
+	}
+
+
 
 
 

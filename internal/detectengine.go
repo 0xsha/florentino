@@ -19,6 +19,7 @@ type DetectionEngine struct {
 	FileType string
 	FileName string
 	DetectedType string
+	Entropy string
 }
 
 func FileAnalysis(detectedFile DetectionEngine, file string, sha1sum string)  {
@@ -71,7 +72,8 @@ func DetectFile(fileHash string) DetectionEngine {
 	Check(err)
 
 	// Binary detection and parsing
-	detectedResult := DetectionEngine{decoded.Detects[0]["filetype"], decoded.Detects[0]["name"], decoded.Detects[0]["type"]}
+	detectedResult := DetectionEngine{decoded.Detects[0]["filetype"], decoded.Detects[0]["name"],
+		decoded.Detects[0]["type"] , decoded.Entropy }
 
 	return detectedResult
 }

@@ -12,6 +12,7 @@ import (
 	"debug/pe"
 	"encoding/json"
 	"fmt"
+	"strconv"
 )
 
 
@@ -40,6 +41,30 @@ func ParsePE(filePath string, sha1sum string) string {
 	report := report(peSymbols,peLibs,sha1sum)
 	return report
 
+}
+
+func IsPEX86(filePath string) bool{
+
+	peFile, err := pe.Open(filePath)
+	Check(err)
+	machine := peFile.Machine
+	bits := strconv.FormatInt(int64(machine),16)
+	if bits == "14c"{
+		return true
+	}
+	return false
+}
+
+func IsPacked(entropy string) bool {
+	// http://n10info.blogspot.com/2014/06/entropy-and-distinctive-signs-of-packed.html
+
+	floated,err := strconv.ParseFloat(entropy,32)
+	Check(err)
+	fmt.Println(floated)
+	if floated >= 6.8{
+		return true
+	}
+	return false
 }
 
 
